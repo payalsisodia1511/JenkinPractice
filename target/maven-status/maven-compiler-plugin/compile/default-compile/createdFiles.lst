@@ -1,0 +1,4 @@
+Academy\E2EProjectAgain\App.class
+resources\Base.class
+pageObjects\HomePageObject.class
+pageObjects\LoginPageObject.class

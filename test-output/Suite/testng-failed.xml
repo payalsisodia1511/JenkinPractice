@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Academy.E2EProjectAgain.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="LoginPageTest(failed)">
+    <classes>
+      <class name="Academy.E2EProjectAgain.LoginPageTest">
+        <methods>
+          <include name="LoginFunctionality"/>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- Academy.E2EProjectAgain.LoginPageTest -->
+    </classes>
+  </test> <!-- LoginPageTest(failed) -->
+  <test thread-count="5" parallel="tests" name="ValidatingNavbar(failed)">
+    <classes>
+      <class name="Academy.E2EProjectAgain.ValidateNavbarTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="OpenBrowser"/>
+          <include name="ValidateNav"/>
+        </methods>
+      </class> <!-- Academy.E2EProjectAgain.ValidateNavbarTest -->
+    </classes>
+  </test> <!-- ValidatingNavbar(failed) -->
+  <test thread-count="5" parallel="tests" name="ValidatingTitle(failed)">
+    <classes>
+      <class name="Academy.E2EProjectAgain.ValidateTitle">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="Validatetitle"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- Academy.E2EProjectAgain.ValidateTitle -->
+    </classes>
+  </test> <!-- ValidatingTitle(failed) -->
+</suite> <!-- Failed suite [Suite] -->
